@@ -35,9 +35,7 @@ client.on('message', (message) => {
   if(message.content == 'ping') {
     return message.reply('pong');
   }
-  client.on('message', (message) => {
-    if(message.author.bot) return;
-  
+
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/avatars/525289579662671882/47b0dab752b0c31dc8ca2646645db4fd.webp?size=128';
     let embed = new Discord.RichEmbed()
