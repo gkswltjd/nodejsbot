@@ -38,10 +38,6 @@ client.on('message', (message) => {
   client.on('message', (message) => {
     if(message.author.bot) return;
   
-    if(message.content == '유후야 뭐하냐') {
-      return message.reply('니 알빠아니야 ㅋㅋ');
-    }
-
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/avatars/525289579662671882/47b0dab752b0c31dc8ca2646645db4fd.webp?size=128';
     let embed = new Discord.RichEmbed()
@@ -65,7 +61,6 @@ client.on('message', (message) => {
     let commandList = [
       {name: '!help', desc: 'help'},
       {name: 'ping', desc: '현재 핑 상태'},
-      {name: '유후야 뭐하냐', desc: '유후와 간단한 이야기하기'},
       {name: 'embed', desc: 'embed 예제1'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
       {name: '!전체공지2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
